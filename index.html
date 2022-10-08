@@ -1,45 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module2 Solution</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Module3 Solution</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
-    <h1 class="our-menu">Our Menu</h1>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img"></div>
+            </a>
 
-    <div class="container">
-      <div class="first">
-        <div class="chicken">Chicken</div>
-        <div class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo
-          est amet id rerum ab vitae impedit, quis qui, suscipit nesciunt
-          blanditiis, rem repellendus temporibus facilis quas perferendis animi
-          nemo.
-        </div>
-      </div>
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Food, LLC</h1></a>
+            </div>
 
-      <div class="second">
-        <div class="beef">Beef</div>
-        <div class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo
-          est amet id rerum ab vitae impedit, quis qui, suscipit nesciunt
-          blanditiis, rem repellendus temporibus facilis quas perferendis animi
-          nemo.
-        </div>
-      </div>
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
-      <div class="third">
-        <div class="sushi">Sushi</div>
-        <div class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis illo
-          est amet id rerum ab vitae impedit, quis qui, suscipit nesciunt
-          blanditiis, rem repellendus temporibus facilis quas perferendis animi
-          nemo.
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#"
+                  ><br class="hidden-xs" />
+                  Chicken</a
+                >
+              </li>
+              <li>
+                <a href="#"><br class="hidden-xs" />Beef</a>
+              </li>
+              <li>
+                <a href="#"><br class="hidden-xs" />Sushi</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
+
+    
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
