@@ -8,28 +8,28 @@ body {
 #header-nav {
   background-color: gray;
   border-radius: 0;
-  border: 3px solid black
+  border: 3px solid black;
 }
 .navbar-brand {
-  padding-top: 25px;
-  
+  /* padding-top: 25px; */
 }
-.navbar-brand h1 { /* Restaurant name */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.navbar-brand h1 {
+  /* Restaurant name */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
   color: #000;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
- 
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover,
+.navbar-brand a:focus {
   text-decoration: none;
 }
 #nav-list {
   background-color: #e8e6f3;
   margin-top: 10px;
-  
 }
 
 #nav-list li {
@@ -44,9 +44,9 @@ body {
 }
 #nav-list a span {
   font-size: 1.8em;
-
 }
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
   border: 2px solid #000;
 }
 .navbar-header button.navbar-toggle {
@@ -54,29 +54,58 @@ body {
   margin-top: -30px;
 }
 
+/* Main Section */
+.box-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.first-box,
+.second-box,
+.third-box {
+  background-color: gray;
+  text-align: left;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.chicken,
+.beef,
+.sushi {
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
+
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
+    height: 50px;
   }
-  .navbar-brand h1 { 
+  .navbar-brand h1 {
     padding-top: 10px;
-    font-size: 5vw; 
+    font-size: 5vw;
   }
-
-  #collapsable-nav a { 
+  #collapsable-nav a {
     font-size: 1.2em;
   }
-  #collapsable-nav a span { 
+  #collapsable-nav a span {
     font-size: 1em;
     margin-right: 5px;
   }
+
+  .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) { 
-  .navbar-brand h1 { 
-    padding-top: 5px;
+@media (max-width: 479px) {
+  .navbar-brand h1 {
     font-size: 6vw;
   }
-} 
+  .box-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
