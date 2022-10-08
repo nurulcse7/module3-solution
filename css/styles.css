@@ -10,9 +10,7 @@ body {
   border-radius: 0;
   border: 3px solid black;
 }
-.navbar-brand {
-  /* padding-top: 25px; */
-}
+
 .navbar-brand h1 {
   /* Restaurant name */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
